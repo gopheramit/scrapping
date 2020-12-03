@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-
+	downloadUrl()
 	client := &http.Client{
 		Timeout: 30 * time.Second,
 	}
