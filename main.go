@@ -10,10 +10,12 @@ import (
 
 func main() {
 	//downloadUrl()
+	//addr := flag.String("addr", "www.google.com", "Website to be scarepped")
+	//flag.Parse()
 	client := &http.Client{
 		Timeout: 30 * time.Second,
 	}
-	request, err := http.NewRequest("GET", "https://www.devdungeon.com/", nil)
+	request, err := http.NewRequest("GET", "www.google.com", nil)
 
 	if err != nil {
 		log.Fatal(err)
